@@ -2,23 +2,26 @@
 #include <stdio.h>
 #include "essential.h"
 
+// // Aparently, there is no way to find the number of elements in the array, because the value passed as reference is the adress and not the value
+// int arrayLength(int * array){
+//     return (sizeof(array) / sizeof(array[0]));
+// }
 
-
-int arrayLength(int * array){
-    return (sizeof(array) / sizeof(array[0]));
-}
- 
-void swap(int * a, int * b){
+// Change the values
+void swap(int* a, int* b){
     int aux = *a;
     *a = *b;
     *b = aux;
 }
 
-void printArray(int * array){
-    int i = 0;
-    printf("  \n{");
-    for (i = 0; i < arrayLength(array); i++){
-        printf(" %d ,", array[i]);
+// Print the array
+void printArray(int* array, int arraySize){
+
+    printf("\n{");
+
+    for (int i = 0; i < arraySize; i++){
+        printf(" %d", array[i]);  
     }
-    printf("  }\n");
+    
+    printf(" }\n");
 }
