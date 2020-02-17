@@ -1,2 +1,2 @@
-a.out
-essential.h.ghc
+*.gch
+*.out
