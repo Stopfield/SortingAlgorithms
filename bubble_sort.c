@@ -3,7 +3,6 @@
 
 // The bubble sort function
 int* bubbleSort(int* array, int arraySize){
-
 	// For each element of the array...
 	for (int i = 0; i < arraySize; i++){
 		for(int j = 0; j < arraySize; j++){
