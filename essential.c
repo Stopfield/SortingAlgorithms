@@ -1,6 +1,7 @@
 // The essential to shorten the code
 #include <stdio.h>
 #include "essential.h"
+#define ASIZE(x) (sizeof(x)/sizeof(x[0]))
 
 // // Aparently, there is no way to find the number of elements in the array, because the value passed as reference is the adress and not the value
 // int arrayLength(int * array){

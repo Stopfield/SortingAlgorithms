@@ -16,11 +16,20 @@ int* bubbleSort(int* array, int arraySize){
 	}
 }
 
+int aaa(){
+	return 10;
+}
+
 int main(){
 	int array[] = {5, 3, 2, 7, 9, 10};
 	
 	// There is no function to know the number of elements of an array in C, so we do that
-	int arraySize = sizeof(array)/sizeof(array[0]);
+	// See the essential.h file to see the macro
+	// int arraySize = sizeof(array)/sizeof(array[0]);
+
+
+	// We will use the macro
+	int arraySize = ARRAY_SIZE(array);
 
 	bubbleSort(array, arraySize);
 	printArray(array, arraySize);
